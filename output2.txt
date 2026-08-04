@@ -1,0 +1,31 @@
+npm warn Unknown project config "node-linker". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+SyntaxError: Error reading Expo config at /data/data/com.termux/files/home/Deprem-Uygulamas-/app.config.ts:
+
+Error transforming /data/data/com.termux/files/home/Deprem-Uygulamas-/app.config.ts: Unexpected token, expected "(" (129:9)
+  127 |   },
+  128 | extra: {
+> 129 | ‎    eas: {
+      |         ^
+  130 | ‎      projectId: "38d7176d-95c2-4800-8bcf-c5a1b882fb76",
+  131 | ‎    },
+  132 | ‎  },
+SyntaxError: Error reading Expo config at /data/data/com.termux/files/home/Deprem-Uygulamas-/app.config.ts:
+
+Error transforming /data/data/com.termux/files/home/Deprem-Uygulamas-/app.config.ts: Unexpected token, expected "(" (129:9)
+  127 |   },
+  128 | extra: {
+> 129 | ‎    eas: {
+      |         ^
+  130 | ‎      projectId: "38d7176d-95c2-4800-8bcf-c5a1b882fb76",
+  131 | ‎    },
+  132 | ‎  },
+    at unexpected (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+    at expect (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/util.js:86:5)
+    at parseFunctionParams (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/statement.js:699:16)
+    at parseMethod (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:924:34)
+    at parseObjectMethod (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:840:5)
+    at parseObjPropValue (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:890:21)
+    at parseObj (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:808:5)
+    at parseExprAtom (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+    at parseExprSubscripts (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+    at parseMaybeUnary (/data/data/com.termux/files/home/Deprem-Uygulamas-/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
