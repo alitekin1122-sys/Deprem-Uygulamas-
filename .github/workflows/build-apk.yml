@@ -35,6 +35,7 @@ jobs:
       - name: Build relase APK
         working-directory: android
         env:
+          EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK
         run: ./gradlew assembleRelease
 
       - name: Upload APK
