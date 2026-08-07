@@ -1,4 +1,4 @@
-name: Build relase APK
+name: Build release APK
 
 on:
   workflow_dispatch:
@@ -34,10 +34,10 @@ jobs:
 
       - name: Build relase APK
         working-directory: android
-        run: ./gradlew assembleRelase
+        run: ./gradlew assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-relase-apk
-          path: android/app/build/outputs/apk/relase/*.apk
+          path: android/app/build/outputs/apk/release/*.apk
