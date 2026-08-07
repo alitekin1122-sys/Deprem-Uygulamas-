@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build relase APK
 
 on:
   workflow_dispatch:
@@ -32,12 +32,12 @@ jobs:
       - name: Expo prebuild (android)
         run: npx expo prebuild --platform android --non-interactive
 
-      - name: Build debug APK
+      - name: Build relase APK
         working-directory: android
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleRelase
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
-          path: android/app/build/outputs/apk/debug/*.apk
+          name: app-relase-apk
+          path: android/app/build/outputs/apk/relase/*.apk
